@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviço</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Solicitação de Serviço</h1>
+      <form id="servicoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="tipoServico">Tipo de Serviço:</label>
+        <select id="tipoServico" name="tipoServico" required>
+          <option value="">Selecione um serviço</option>
+          <option value="consultoria">Consultoria</option>
+          <option value="manutencao">Manutenção</option>
+          <option value="desenvolvimento">Desenvolvimento</option>
+        </select>
+
+        <label for="email">Email (opcional):</label>
+        <input type="text" id="email" name="email" />
+
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade" required>
+          <option value="">Selecione uma cidade</option>
+          <option value="saoPaulo">São Paulo</option>
+          <option value="curitiba">Curitiba</option>
+          <option value="portoAlegre">Porto Alegre</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
